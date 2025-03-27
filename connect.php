@@ -1,0 +1,6 @@
+<?php
+        define ('MARIADB_USER','admin');
+        define ('MARIADB_PASSWORD','admin');
+        define ('MARIADB_DATABASE','Info411_brawl');
+        define ('MARIADB_ROOT_PASSWORD','admin+');
+?>
