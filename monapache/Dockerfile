@@ -16,3 +16,5 @@ WORKDIR /var/www/html
 RUN cp connect.php.docker connect.php
 
 EXPOSE 80
+
+CMD ["apache2-foreground"]
