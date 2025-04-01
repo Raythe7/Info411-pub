@@ -8,7 +8,7 @@ RUN cp "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 WORKDIR /var/www/
 
-RUN git clone https://github.com/Raythe7/Info411-pub.git
+RUN git clone https://github.com/Raythe7/Info411-pub.git html
 
 WORKDIR /var/www/html
 
