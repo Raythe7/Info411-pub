@@ -2,10 +2,10 @@ services:
   mariadb:
     image: mariadb
     environment: 
-      -MARIADB_USER: admin
-      -MARIADB_PASSWORD: admin
-      -MARIADB_DATABASE: Info411_brawl
-      -MARIADB_ROOT_PASSWORD: admin+
+      -MARIADB_USER:admin
+      -MARIADB_PASSWORD:admin
+      -MARIADB_DATABASE:Info411_brawl
+      -MARIADB_ROOT_PASSWORD:admin+
     ports:
       -3306:3306
   monapache:
