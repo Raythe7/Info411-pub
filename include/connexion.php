@@ -1,14 +1,14 @@
  <?php
     require('connect.php');
 	
-	$CONNEXION = mysqli_connect(MARIADB_USER, MARIADB_PASSWORD, MARIADB_DATABASE);
+	$CONNEXION = mysqli_connect("mariadb-1:3306",MARIADB_USER, MARIADB_PASSWORD);
 		//Connexion au serveur de bases de données
 	if (mysqli_connect_errno()) {
-		echo 'Désolé, connexion au serveur ' . SERVEUR_BD . ' impossible, '. mysqli_connect_error(), "\n";
+		echo 'Désolé, connexion au serveur ' . "mariadb-1:3306" . ' impossible, '. mysqli_connect_error(), "\n";
     	exit();
 	}
 	// Sélection de la base de données
-	mysqli_select_db($CONNEXION, NOM_BD);
+	mysqli_select_db($CONNEXION, NOM_BD); 
 	if (mysqli_connect_errno()) {
 		echo 'Désolé, accès à la base ' . NOM_BD . ' impossible, '. mysqli_connect_error(), "\n";
     	exit();
