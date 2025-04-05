@@ -13,7 +13,7 @@ RUN git clone https://github.com/Raythe7/Info411-pub.git html
 WORKDIR /var/www/html
 
 # Si vous avez un fichier de config spécifique dans votre projet github
-RUN cp connect.php.docker connect.php
+# RUN cp connect.php.docker connect.php
 
 EXPOSE 80
 
