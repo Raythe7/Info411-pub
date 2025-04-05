@@ -8,8 +8,12 @@ services:
       - MARIADB_ROOT_PASSWORD=admin+
     ports:
       - 3306:3306
+    volumes:
+      - /home/elie/Documents/projetDocker/db_data:/var/lib/mysql
   monapache:
     image: delvarre/monapache
+    volumes:
+      - .:/var/www.html
     ports:
       - 80:80
   phpmyadmin:
