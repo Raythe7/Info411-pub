@@ -2,7 +2,7 @@
 
 require('../connect.php');
 	
-$CONNEXION = mysqli_connect(MARIADB_USER, MARIADB_PASSWORD, MARIADB_DATABASE);
+$CONNEXION = mysqli_connect("mariadb", MARIADB_USER, MARIADB_PASSWORD, MARIADB_DATABASE);
 
 $sql = "SELECT * FROM `brawlers`";
 $result = mysqli_query($CONNEXION, $sql);
