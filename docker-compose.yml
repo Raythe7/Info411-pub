@@ -9,7 +9,7 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - /home/elie/Documents/projetDocker/db_data:/var/lib/mysql
+      - /home/elie/Documents/projetDocker/Info411-pub/db_data:/var/lib/mysql
   monapache:
     image: delvarre/monapache
     volumes:
